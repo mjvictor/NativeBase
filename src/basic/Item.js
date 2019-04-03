@@ -95,7 +95,7 @@ class Item extends Component {
             style: {...labelStyle, ...labelProps.floatLabelStyle},
           })
         );
-        this.floatUp(-16);
+        this.floatUp(labelProps.floatUp ? labelProps.floatUp : -16); // -16
       } else {
         newLabel.push(label);
         this.floatBack();
