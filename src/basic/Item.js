@@ -92,7 +92,7 @@ class Item extends Component {
             ...labelProps,
             key: "newFLabel",
             float: true,
-            style: labelStyle
+            style: {...labelStyle, ...labelProps.floatLabelStyle},
           })
         );
         this.floatUp(-16);
