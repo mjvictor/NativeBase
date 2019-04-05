@@ -82,7 +82,7 @@ class Item extends Component {
   renderLabel(label, labelProps) {
     const newLabel = [];
     let labelStyle = StyleSheet.flatten([
-      { fontSize: 10, lineHeight: 60 }, // fontSize 15 60
+      { fontSize: 10, lineHeight: 40 }, // fontSize 15
       labelProps.style
     ]);
     if (this.props.floatingLabel) {
